@@ -1,0 +1,16 @@
+{
+  "name": "wasb_database_config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "John Stevens <john.william.stevens1@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "csvtojson": "^2.0.10",
+  }
+}
