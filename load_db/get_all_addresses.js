@@ -14,7 +14,7 @@ axios.get("http://localhost:8000/api/businesses")
                 .geocode({
                     params: {
                         address: address,
-                        key: "AIzaSyCkv5iWhTid6y-MzbBTnojVUVPKETHaqvc",
+                        key: "api-key-here",
                     },
                     timeout: 1000, // milliseconds
                 })
