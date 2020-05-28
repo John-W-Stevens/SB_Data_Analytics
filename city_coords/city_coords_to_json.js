@@ -8,7 +8,7 @@ csvtojson()
         data = csvData
         fs.appendFile("city_coordinates.js", "cities = {" +"\n", (err)=>{if(err) throw err})
         for (const entry of data){
-            let line = `    { "city": "${entry.city}", "lat": "${entry.latitude}", "long": "${entry.longitude}"}`
+            let line = `    "${entry.city}": {lat: ${entry.latitude}, long: ${entry.longitude}}`
             fs.appendFile("city_coordinates.js", line + ",\n", (err)=>{if(err) throw err})
         }
         fs.appendFile("city_coordinates.js", "}", (err)=>{if(err) throw err})
